@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <form method="POST" action="{{route('login')}}">
+                <form method="POST" action="{{route('login')}}" class="bg-body-tertiary shadow rounded p-5 my-3">
                 @csrf
                 <div class="mb-3">
                     <label for="loginEmail" class="form-label">Inserisci la tua email</label>

@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <form method="POST" action="{{route('register')}}">
+                <form method="POST" action="{{route('register')}}" class="bg-body-tertiary shadow rounded p-5 my-3">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Inserisci il tuo nome:</label>
