@@ -3,7 +3,7 @@
         <div class="container h-100 ">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-12 col-md-8">
-                    <h1 class="text-center title-galaxy">I TUOI ANNUNCI</h1>
+                    <h1 class="text-center title-galaxy">Vedi tutti gli articoli in vendita</h1>
                 </div>
             </div>
         </div>

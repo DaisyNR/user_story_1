@@ -34,5 +34,10 @@
     <div class="d-flex justify-content-center">
         <button type="submit" class="btn btn-dark">Submit</button>
     </div>
+    @if (session()->has('success'))
+    <div class="alert alert-success text-center mt-3">
+        {{session('success')}}
+    </div>
+    @endif
 </form>
 

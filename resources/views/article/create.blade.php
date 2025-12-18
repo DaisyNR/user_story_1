@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h1 class="display-4 pt-5">
-                    Upload an item
+                    Carica un articolo
                 </h1>
             </div>
         </div>

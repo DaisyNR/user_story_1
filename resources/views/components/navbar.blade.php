@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">USATO.IT</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -13,17 +13,17 @@
 
         @guest
         <li class="nav-item">
-          <a class="nav-link" href="{{route('login')}}">Login</a>
+          <a class="nav-link" href="{{route('login')}}">Accedi</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('register')}}">Register</a>
+          <a class="nav-link" href="{{route('register')}}">Registrati</a>
         </li>  
         @endguest
 
         @auth
-        {{-- <li class="nav-item">
+        <li class="nav-item">
           <a href="#" class="nav-link">Welcome {{Auth::user()->name}}</a>
-        </li> --}}
+        </li>
         <li class="nav-item px-3">
           <a class="nav-link" href="{{route('article.index')}}">I tuoi annunci</a>
         </li>

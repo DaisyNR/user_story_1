@@ -21,11 +21,11 @@ class Article extends Model
 
     public function user(): BelongsTo
     {
-        return $this->BelongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function category(): BelongsTo
     {
-        return $this->BelongsTo(Category::class);
+        return $this->belongsTo(Category::class);
     }
 }
