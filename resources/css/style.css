@@ -14,9 +14,12 @@ h1,.h1{
 /* COLOR VARIABLES */
 :root{
     --pink: rgb(237, 0, 142) ;
+    --light-pink: rgba(237, 0, 142, 0.297) ;
     --orange: rgb(240, 85, 42);
+    --light-orange: rgba(240, 85, 42, 0.297);
     --green: rgb(8, 169, 85);
     --blue:rgb(86, 83, 255);
+    --light-blue: rgba(86, 83, 255, 0.297);
     --yellow:rgb(254, 246, 19);
     --purple: rgb(156, 8, 156);
 }
@@ -40,6 +43,20 @@ h1,.h1{
 .b-yellow{
     background-color: var(--yellow);
 }
+
+.b-light-blue{
+    background-color: var(--light-blue);
+}
+
+.b-light-orange{
+    background-color: var(--light-orange);
+}
+
+.b-light-pink{
+    background-color: var(--light-pink);
+}
+
+
 
 
 /* BUTTONS */
@@ -110,4 +127,13 @@ h1,.h1{
 .moved-text span:nth-child(3) {
   margin-left: 25rem;
   margin-top: 0.5rem;
+}
+
+/* BACKGROUND */
+
+.bg-custom{
+    background-image: url(/public/media/colours.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

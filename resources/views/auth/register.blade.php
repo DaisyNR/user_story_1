@@ -8,7 +8,7 @@
             </div>
 
             <div class="col-12 col-md-6">
-                <form method="POST" action="{{route('register')}}" class="border-orange shadow rounded p-5 my-3">
+                <form method="POST" action="{{route('register')}}" class="border-orange b-light-orange shadow rounded p-5 my-3">
                     @csrf
                     <div class="mb-3">
                         <label for="name" class="form-label">Name</label>

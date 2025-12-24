@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container-fluid text-center">
+    <div class="container-fluid text-center bg-custom">
         <div class="row vh-100 justify-content-center align-items-center">
             <div class="col-12">
                 
@@ -11,9 +11,9 @@
                     @endauth
                     
                     <h1 class="moved-text">
-                        <span class="h1 display-3">Cash</span>
-                        <span class="h1 display-4">from</span>
-                        <span class="h1 display-5">clutter</span>
+                        <span class="h1 display-3 text-black">Cash</span>
+                        <span class="h1 display-4 text-black">from</span>
+                        <span class="h1 display-5 text-black">clutter</span>
                     </h1>
                     <a href="{{route('create.article')}}">
                         <button type="submit" class="btn btn-lg m-3 btn btn-outline-dark rounded-3 ">Sell an item</button>

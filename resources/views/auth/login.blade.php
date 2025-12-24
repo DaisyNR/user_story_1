@@ -7,8 +7,8 @@
                 <h1 class="display-4 text-center t-blue">Login</h1>        
             </div>
 
-            <div class="col-12 col-md-6">
-                <form method="POST" action="{{route('login')}}" class="border-blue shadow rounded p-5 my-3">
+            <div class="col-12 col-md-6 ">
+                <form method="POST" action="{{route('login')}}" class="border-blue b-light-blue shadow rounded p-5 my-3">
                 @csrf
                 <div class="mb-3">
                     <label for="email" class="form-label">Your email address</label>

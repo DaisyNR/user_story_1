@@ -1,4 +1,4 @@
-<form class="border-pink shadow rounded p-4 my-5" wire:submit="store">
+<form class="border-pink b-light-pink shadow rounded p-4 my-5" wire:submit="store">
     <div class="mb-3">
         <label for="title" class="form-label">Title</label>
         <input type="text" class="form-control" @error('title') is-invalid @enderror id="title" wire:model.blur="title">
@@ -31,7 +31,7 @@
             <p class="fst-italic text-danger">{{$message}}</p>
         @enderror
     </div>
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-start">
         <button type="submit" class="btn btn-pink">Submit</button>
     </div>
     @if (session()->has('success'))
