@@ -1,15 +1,16 @@
 <x-layout>
-    <div class="container pt-5">
-        <div class="row justify-content-center">
-            <div class="col-12 text-center">
-                <h1 class="display-4 pt-5">
-                    Carica un articolo
-                </h1>
+    <div class="container">
+
+        <div class="row vh-100 d-flex align-items-center justify-content-center">
+
+            <div class="col-12 col-md-6">
+                <h1 class="display-4 text-center t-pink">Carica un articolo</h1>        
             </div>
-        </div>
-    </div><div class="row justify-content-center align-items-center">
-        <div class="col-12 col-md-6">
-            <livewire:create-article-form/>
-        </div>
-    </div>
+
+            <div class="col-12 col-md-6">
+                <livewire:create-article-form/>
+            </div>
+
+        </div>   
+    </div> 
 </x-layout>

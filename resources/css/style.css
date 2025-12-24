@@ -1,0 +1,103 @@
+/* FONTS */
+h1,.h1{
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+  font-family: "Contrail One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* COLOR VARIABLES */
+:root{
+    --pink: rgb(237, 0, 142) ;
+    --orange: rgb(240, 85, 42);
+    --green: rgb(8, 169, 85);
+    --blue:rgb(86, 83, 255);
+    --yellow:rgb(254, 246, 19);
+    --purple: rgb(156, 8, 156);
+}
+
+.t-pink{
+    color: var(--pink);
+}
+
+.t-orange{
+    color: var(--orange);
+}
+
+.t-blue{
+    color: var(--blue);
+}
+
+.b-yellow{
+    background-color: var(--yellow);
+}
+
+
+/* BUTTONS */
+.btn-pink{
+    background-color: var(--pink)!important;
+    border: 2px solid rgb(33, 37, 41) !important;
+    color: white!important;
+}
+
+.btn-orange{
+    background-color: var(--orange)!important;
+    border: 2px solid rgb(33, 37, 41) !important;
+    color:white!important;
+}
+
+.btn-blue{
+    background-color: var(--blue)!important;
+    border: 2px solid rgb(33, 37, 41) !important;
+    color:white!important;
+}
+
+.btn-outline-dark:hover{
+    background-color: var(--yellow)!important;
+    color: rgb(33, 37, 41)!important;
+}
+
+.btn-outline-dark{
+    border: 3px dashed rgb(33, 37, 41)!important;
+}
+
+/* BORDERS */
+.border-pink{
+    border: 3px dashed var(--pink);
+}
+
+.border-orange{
+    border: 3px dashed var(--orange);
+}
+
+.border-blue{
+    border: 3px dashed var(--blue);
+}
+
+.border-bottom-black{
+    border-bottom: 3px dashed rgb(33, 37, 41);
+}
+
+/* MOVED TEXT */
+.moved-text span {
+  display: block;
+}
+
+.moved-text span:nth-child(1) {
+  margin-left: -20rem;
+}
+
+.moved-text span:nth-child(2) {
+  margin-left: 0rem;
+  margin-top: 0.5rem;
+}
+
+.moved-text span:nth-child(3) {
+  margin-left: 25rem;
+  margin-top: 0.5rem;
+}
