@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg border-bottom-black bg-white fixed-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><i class="bi bi-bag-heart-fill"></i></a>
+    <a class="navbar-brand" href="#"><i class="bi bi-bag-heart-fill b-yellow p-2 rounded-5 border border-dark"></i></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,19 +11,19 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
 
-        {{-- @guest --}}
+        @guest
         <li class="nav-item">
           <a class="nav-link" href="{{route('login')}}">Login</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('register')}}">Register</a>
         </li>  
-        {{-- @endguest
+        @endguest
 
        @auth 
         <li class="nav-item">
           <a href="#" class="nav-link">Welcome {{Auth::user()->name}}</a>
-        </li> --}}
+        </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('article.index')}}">Browse all items</a>
         </li>
@@ -36,7 +36,7 @@
             <button class="nav-link" type="submit">Logout</button>
           </form>
         </li>          
-        {{-- @endauth --}}
+        @endauth
             
       </ul>
     </div>

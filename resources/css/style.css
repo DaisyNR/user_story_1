@@ -14,7 +14,7 @@ h1,.h1{
 /* COLOR VARIABLES */
 :root{
     --pink: rgb(237, 0, 142) ;
-    --light-pink: rgba(237, 0, 142, 0.297) ;
+    --light-pink: rgba(237, 0, 142, 0.297);
     --orange: rgb(240, 85, 42);
     --light-orange: rgba(240, 85, 42, 0.297);
     --green: rgb(8, 169, 85);
@@ -55,8 +55,6 @@ h1,.h1{
 .b-light-pink{
     background-color: var(--light-pink);
 }
-
-
 
 
 /* BUTTONS */
