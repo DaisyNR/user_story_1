@@ -10,13 +10,13 @@ use Illuminate\Support\Facades\Auth;
 class CreateArticleForm extends Component
 {
     #[Validate('required|min:3')] 
-    public $title;
+    public $title= '';
  
     #[Validate('required|min:10')] 
-    public $description;
+    public $description= '';
 
     #[Validate('required|numeric')] 
-    public $price;
+    public $price= '';
 
     #[Validate('required')] 
     public $category;
@@ -34,6 +34,7 @@ class CreateArticleForm extends Component
         ]);
         $this->reset();
         session()->flash('success','Article posted');
+        $this->redirect('/article/index');	
     }
 
     public function render()
