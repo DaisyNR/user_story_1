@@ -18,7 +18,7 @@
                     <a href="{{route('create.article')}}">
                         <button type="submit" class="btn btn-lg m-3 btn btn-outline-dark rounded-3 ">Sell an item</button>
                     </a>
-                    <a href="#">
+                    <a href="{{route('article.index')}}">
                         <button type="submit" class="btn btn-lg m-3 btn-outline-dark rounded-3">Browse items</button>
                     </a>
                 </div>

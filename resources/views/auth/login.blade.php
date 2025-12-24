@@ -11,8 +11,8 @@
                 <form method="POST" action="{{route('login')}}" class="border-blue shadow rounded p-5 my-3">
                 @csrf
                 <div class="mb-3">
-                    <label for="loginEmail" class="form-label">Your email address</label>
-                    <input type="email" class="form-control" id="loginEmail" name="email">
+                    <label for="email" class="form-label">Your email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Your password</label>

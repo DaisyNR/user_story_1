@@ -33,6 +33,10 @@ h1,.h1{
     color: var(--blue);
 }
 
+.t-green{
+    color: var(--green);
+}
+
 .b-yellow{
     background-color: var(--yellow);
 }
@@ -53,6 +57,12 @@ h1,.h1{
 
 .btn-blue{
     background-color: var(--blue)!important;
+    border: 2px solid rgb(33, 37, 41) !important;
+    color:white!important;
+}
+
+.btn-green{
+    background-color: var(--green)!important;
     border: 2px solid rgb(33, 37, 41) !important;
     color:white!important;
 }
