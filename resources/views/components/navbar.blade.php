@@ -37,6 +37,22 @@
           </form>
         </li>          
         @endauth
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu">
+
+            @foreach ($categories as $category)
+                <li><a class="dropdown-item text-capitalize" href="{{route('byCategory',['category'=>$category])}}">{{$category->name}}</a></li>
+                @if (!$loop->last)
+                    <hr class="dropdown-divider">
+                @endif
+            @endforeach
+
+          </ul>
+        </li>
             
       </ul>
     </div>

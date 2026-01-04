@@ -24,5 +24,18 @@
                 </div>
             </div>
         </div>
+        <div class="row justify-content-center align-items-center p-5">
+            @forelse ($articles as $article)
+                <div class="col-12 col-md-3">
+                    <x-card :article="$article"/>
+                </div>
+            @empty
+                <div class="col-12">
+                    <h3 class="text-center">
+                        No items on sale
+                    </h3>
+                </div>
+            @endforelse
+        </div>
     </div>
 </x-layout>
