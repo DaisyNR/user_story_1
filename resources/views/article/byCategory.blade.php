@@ -18,7 +18,6 @@
                 </div>
                 
                 <div class="d-flex justify-content-center">
-
                     <a href="{{route('create.article')}}" class="btn btn-outline-dark my-5">Upload an item</a>
                 </div>
                 

@@ -6,11 +6,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
+        
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
-
+        
         @guest
         <li class="nav-item">
           <a class="nav-link" href="{{route('login')}}">Login</a>
@@ -19,15 +19,15 @@
           <a class="nav-link" href="{{route('register')}}">Register</a>
         </li>  
         @endguest
-
-       @auth 
+        
+        @auth 
         <li class="nav-item">
           <a href="#" class="nav-link">Welcome {{Auth::user()->name}}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('article.index')}}">Browse all items</a>
         </li>
-         <li class="nav-item">
+        <li class="nav-item">
           <a href="{{route('create.article')}}" class="nav-link">Sell an item</a>
         </li>
         <li class="nav-item">
@@ -35,25 +35,39 @@
             @csrf 
             <button class="nav-link" type="submit">Logout</button>
           </form>
-        </li>          
+        </li>
+        
+        
         @endauth
-
+        {{-- @if (Auth::user()->is_revisor) --}}
+        <li class="nav-item">
+          <a href="{{route('revisor.index')}}" class="nav-link btn btn-sm position-relative w-sm-25">Revisor Area
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              {{\App\Models\Article::toBeRevisedCount()}}
+            </span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="{{route('become.revisor')}}" class="nav-link">Become a Revisor</a>
+        </li>
+        {{-- @endif   --}}
+        
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </a>
           <ul class="dropdown-menu">
-
+            
             @foreach ($categories as $category)
-                <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}">{{$category->name}}</a></li>
-                @if (!$loop->last)
-                    <hr class="dropdown-divider">
-                @endif
+            <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}">{{$category->name}}</a></li>
+            @if (!$loop->last)
+            <hr class="dropdown-divider">
+            @endif
             @endforeach
-
+            
           </ul>
         </li>
-            
+        
       </ul>
     </div>
   </div>

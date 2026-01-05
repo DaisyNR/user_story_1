@@ -11,13 +11,13 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
+                            <img src="https://picsum.photos/300" class="d-block w-100 rounded shadow" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
+                            <img src="https://picsum.photos/300" class="d-block w-100 rounded shadow" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="https://picsum.photos/400" class="d-block w-100 rounded shadow" alt="...">
+                            <img src="https://picsum.photos/300" class="d-block w-100 rounded shadow" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

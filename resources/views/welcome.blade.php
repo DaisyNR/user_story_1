@@ -1,4 +1,8 @@
 <x-layout>
+    @if(session()->has('message'))
+        <div class="alert alert-success text-center shadow rounded w-50">{{session('message')}}</div>
+    @endif
+    
     <div class="container-fluid text-center bg-custom">
         <div class="row vh-100 justify-content-center align-items-center">
             <div class="col-12">
@@ -26,7 +30,7 @@
         </div>
         <div class="row justify-content-center align-items-center p-5">
             @forelse ($articles as $article)
-                <div class="col-12 col-md-4 d-flex justify-content-center">
+                <div class="col-12 col-md-4 d-flex justify-content-center p-3">
                     <x-card :article="$article"/>
                 </div>
             @empty
