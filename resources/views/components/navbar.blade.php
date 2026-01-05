@@ -5,7 +5,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav mb-2 mb-lg-0">
         
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
@@ -67,6 +67,13 @@
             
           </ul>
         </li>
+
+        <form action="{{route('article.search')}}" method="GET" class="d-flex ms-auto" role="search">
+          <div class="input-group">
+            <input type="search" name="query" class="form-control" placeholder="Search" aria-label="search">
+            <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2">Search</button>
+          </div>
+        </form>
         
       </ul>
     </div>
