@@ -135,3 +135,9 @@ h1,.h1{
     background-size: cover;
     background-position: center;
 }
+
+/* DROPDOWN */
+
+.dropdown-custom:hover{
+    background-color: var(--yellow)!important;
+}
