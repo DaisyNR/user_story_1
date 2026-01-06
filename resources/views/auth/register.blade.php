@@ -4,7 +4,7 @@
         <div class="row vh-100 d-flex align-items-center justify-content-center">
 
             <div class="col-12 col-md-6">
-                <h1 class="display-4 text-center t-orange">Register</h1>        
+                <h1 class="display-4 text-center t-orange">{{ __('ui.register') }}</h1>        
             </div>
 
             <div class="col-12 col-md-6">
@@ -15,7 +15,7 @@
                         <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
+                        <label for="email" class="form-label">{{ __('ui.emailAddress') }}</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
@@ -26,7 +26,7 @@
                         <label for="password_confirmation" class="form-label">Confirm password</label>
                         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                     </div>
-                    <button type="submit" class="btn btn-orange">Register</button>
+                    <button type="submit" class="btn btn-orange">{{ __('ui.register') }}</button>
                 </form>
             </div>
 

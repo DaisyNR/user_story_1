@@ -13,10 +13,10 @@
         
         @guest
         <li class="nav-item">
-          <a class="nav-link" href="{{route('login')}}">Login</a>
+          <a class="nav-link" href="{{route('login')}}">{{ __('ui.login') }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('register')}}">Register</a>
+          <a class="nav-link" href="{{route('register')}}">{{ __('ui.register') }}</a>
         </li>  
         @endguest
         
@@ -25,10 +25,10 @@
           <a href="#" class="nav-link">Welcome {{Auth::user()->name}}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('article.index')}}">Browse all items</a>
+          <a class="nav-link" href="{{route('article.index')}}">{{ __('ui.browseItems') }}</a>
         </li>
         <li class="nav-item">
-          <a href="{{route('create.article')}}" class="nav-link">Sell an item</a>
+          <a href="{{route('create.article')}}" class="nav-link">{{ __('ui.sellAnItem') }}</a>
         </li>
         <li class="nav-item">
           <form action="{{route('logout')}}" method="POST">
@@ -41,25 +41,25 @@
         @endauth
         {{-- @if (Auth::user()->is_revisor) --}}
         <li class="nav-item">
-          <a href="{{route('revisor.index')}}" class="nav-link btn btn-sm position-relative w-sm-25">Revisor Area
+          <a href="{{route('revisor.index')}}" class="nav-link btn btn-sm position-relative w-sm-25">{{ __('ui.revisorArea') }}
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               {{\App\Models\Article::toBeRevisedCount()}}
             </span>
           </a>
         </li>
         <li class="nav-item">
-          <a href="{{route('become.revisor')}}" class="nav-link">Become a Revisor</a>
+          <a href="{{route('become.revisor')}}" class="nav-link">{{ __('ui.becomeRevisor') }}</a>
         </li>
         {{-- @endif   --}}
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Categories
+            {{ __('ui.categories') }}
           </a>
           <ul class="dropdown-menu">
             
             @foreach ($categories as $category)
-            <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}">{{$category->name}}</a></li>
+            <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}"> {{__("ui.{$category->name}")}}</a></li>
             @if (!$loop->last)
             <hr class="dropdown-divider">
             @endif
@@ -70,10 +70,14 @@
 
         <form action="{{route('article.search')}}" method="GET" class="d-flex ms-auto" role="search">
           <div class="input-group">
-            <input type="search" name="query" class="form-control" placeholder="Search" aria-label="search">
-            <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2">Search</button>
+            <input type="search" name="query" class="form-control" placeholder="{{ __('ui.search') }}" aria-label="search">
+            <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2">{{ __('ui.search') }}</button>
           </div>
         </form>
+        
+        <x-_locale lang="it"/>
+        <x-_locale lang="en"/>
+        <x-_locale lang="es"/>
         
       </ul>
     </div>

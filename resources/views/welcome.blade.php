@@ -20,10 +20,10 @@
                         <span class="h1 display-5 text-black">clutter</span>
                     </h1>
                     <a href="{{route('create.article')}}">
-                        <button type="submit" class="btn btn-lg m-3 btn btn-outline-dark rounded-3 ">Sell an item</button>
+                        <button type="submit" class="btn btn-lg m-3 btn btn-outline-dark rounded-3 ">{{ __('ui.sellAnItem') }}</button>
                     </a>
                     <a href="{{route('article.index')}}">
-                        <button type="submit" class="btn btn-lg m-3 btn-outline-dark rounded-3">Browse items</button>
+                        <button type="submit" class="btn btn-lg m-3 btn-outline-dark rounded-3">{{ __('ui.browseItems') }}</button>
                     </a>
                 </div>
             </div>

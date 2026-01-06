@@ -1,0 +1,26 @@
+<?php
+return 
+[
+    'hello' => 'Hello',
+    'allArticles' => 'All the articles',
+    'browseItems' => 'Browse Items',
+    'sellAnItem' => 'Sell an item',
+    'search' => 'Search',
+    'emailAddress' => 'Email address',
+    'categories' =>  'Categories',
+    'login' => 'Login',
+    'register' => 'Register',
+    'revisorArea' => 'Revisor Area',
+    'becomeRevisor' => 'Become a revisor',
+    'readMore...' => 'Read more...',
+    'tech' => 'Tech',
+    'clothing' => 'Clothing',
+    'health_and_beauty' => 'Health & Beauty',
+    'home_and_gardening' => 'Home & Gardening',
+    'toys' => 'Toys',
+    'sport' => 'Sport',
+    'pets' => 'Pets',
+    'books_and_magazines' => 'Books & Magazines',
+    'accessories' => 'Accessories',
+    'motors' => 'Motors',
+];

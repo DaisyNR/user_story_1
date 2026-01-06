@@ -3,7 +3,7 @@
         <h5 class="card-title">{{$article->title}}</h5>
         <h6 class="card-subtitle mb-3">{{$article->price}}€</h6>
         <p class="card-text">{{$article->description}}</p>
-        <a href="{{route('article.show', compact('article'))}}" class="btn btn-green btn-sm mt-auto ">Read more...</a>
+        <a href="{{route('article.show', compact('article'))}}" class="btn btn-green btn-sm mt-auto ">{{ __('ui.readMore...') }}</a>
         @if ($article->category)
         <a href="{{ route('byCategory', $article->category) }}"
             class="btn btn-green btn-sm mt-auto">

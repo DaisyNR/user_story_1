@@ -1,0 +1,26 @@
+<?php
+return 
+[
+    'hello' => 'Hola',
+    'allArticles' => 'Todos los articulos',
+    'browseItems' => 'Echa un vistazo',
+    'sellAnItem' => 'Vende algo',
+    'search' => 'Busca',
+    'emailAddress' => 'Correo electrónico',
+    'categories' => 'Categorías',
+    'login' => 'Iniciar sesión',
+    'register' => 'Registrarse',
+    'revisorArea' => 'Área de revisores',
+    'becomeRevisor'=>'Conviértete en revisor',
+    'readMore...' => 'Lee más...',
+    'tech' => 'Tecnología',
+    'clothing' => 'Ropa',
+    'health_and_beauty' => 'Salud y belleza',
+    'home_and_gardening' => 'Hogar y jardinería',
+    'toys' => 'Juguetes',
+    'sport' => 'Deporte',
+    'pets' => 'Mascotas',
+    'books_and_magazines' => 'Libros y revistas',
+    'accessories' => 'Accesorios',
+    'motors' => 'Motores',
+];
