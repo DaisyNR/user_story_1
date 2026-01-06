@@ -1,27 +1,35 @@
 <x-layout>
     <div class="container-fluid pt-5">
-        <div class="row">
-            <div class="col-3"> 
-                <h1 class="display-5 text-center pb-2">Revisor dashboard</h1>
+        <div class="row justify-content-center">
+            <div class="col-12 pb-2"> 
+                <h1 class="display-5 text-center ">Revisor dashboard</h1>
             </div>
         </div>
     </div>
 
+    
+    
     @if ($article_to_check)
-
+    
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="row justify-content-center">
-                @for ($i = 0; $i < 6; $i++)
-                    <div class="col-6 col-md-4 mb-4 text-center">
-                        <img src="https://picsum.photos/300" class="img-fluid rounded shadow" alt="placeholder">
-                    </div>
-                @endfor
-            </div>
-        </div>
+        @if ($article_to_check->images->count())
+            @foreach ($article_to_check->images as $key=>$image)
+                <div class="col-6 col-md-4 mb-4 text-center">
+                            <img src="{{Storage::url($image->path)}}" class="img-fluid rounded shadow" alt="immagine {{$key +1}} dell'articolo {{$article_to_check->title}}">
+                        </div>
+                
+            @endforeach   
+        @else
+            @for ($i = 0; $i < 6; $i++)
+                        <div class="col-6 col-md-4 mb-4 text-center">
+                            <img src="https://picsum.photos/300" class="img-fluid rounded shadow" alt="placeholder">
+                        </div>
+            @endfor
+        @endif
+        
         <div class="col-md-4 ps-4 d-flex flex-column justify-content-between">
             <div>
-                <h1>{{$article_to_check->title}}</h1>
+                <h2 class="text-uppercase fw-bold">{{$article_to_check->title}}</h2>
                 {{-- <h3>Author:{{$article_to_check->user->name}}</h3> --}}
                 <h4>{{$article_to_check->price}}€</h4>
                 {{-- <h4 class="fst-italic text-muted">#{{$article_to_check->category->name}}</h4> --}}

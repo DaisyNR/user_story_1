@@ -141,3 +141,12 @@ h1,.h1{
 .dropdown-custom:hover{
     background-color: var(--yellow)!important;
 }
+
+/* IMAGES */
+.img-preview{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
