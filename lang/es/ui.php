@@ -9,7 +9,7 @@ return
     'emailAddress' => 'Correo electrónico',
     'categories' => 'Categorías',
     'login' => 'Iniciar sesión',
-    'register' => 'Registrarse',
+    'register' => 'Regístrate',
     'revisorArea' => 'Área de revisores',
     'becomeRevisor'=>'Conviértete en revisor',
     'readMore...' => 'Lee más...',
