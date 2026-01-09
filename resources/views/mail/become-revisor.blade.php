@@ -8,11 +8,11 @@
 </head>
 <body>
     <div>
-        <h1>A user requested to work with us</h1>
-        <h2>Here are his details;</h2>
+        <h1>A user has requested to work with us</h1>
+        <h2>Here are the user's details:</h2>
         <p>Name: {{$user->name}}</p>
         <p>Emal address: {{$user->email}}</p>
-        <p>If you with to accept the request, click here:</p>
+        <p>If you wish to accept this request, click here:</p>
         <a href="{{route('make.revisor', compact('user'))}}">Make revisor</a>
     </div>
 </body>

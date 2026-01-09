@@ -18,7 +18,7 @@ Route::patch('/accept/{article}',[RevisorController::class,'accept'])->name('acc
 Route::patch('/reject/{article}',[RevisorController::class,'reject'])->name('reject');
 Route::get('/make/revisor/{user}',[RevisorController::class,'makeRevisor'])->name('make.revisor');
 // Mail
-Route::get('revisor/request',[RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
+Route::get('/revisor/request',[RevisorController::class,'becomeRevisor'])->middleware('auth')->name('become.revisor');
 // Search bar
 Route::get('/search/article',[PublicController::class,'searchArticles'])->name('article.search');
 // Languages

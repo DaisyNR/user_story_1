@@ -35,6 +35,7 @@
                 {{-- <h4 class="fst-italic text-muted">#{{$article_to_check->category->name}}</h4> --}}
                 <p class="h6">{{$article_to_check->description}}</p>
             </div>
+            {{-- ALERT MESSAGE --}}
             @if (session()->has('message'))
             <div class="row justify-content-center">
                 <div class="col-5 alert alert-success text-center shadow b-yellow rounded">
@@ -42,8 +43,9 @@
                 </div>
             </div>   
             @endif
+
             <div class="d-flex pb-4 justify-content-around">
-                <form action="{{route('reject',['article'=>$article_to_check])}}" method="POST">
+                <form action="{{route('reject',['article' => $article_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
                     <button class="btn btn-danger py-2 px-5 fw-bold">Reject</button>

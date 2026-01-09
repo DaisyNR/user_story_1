@@ -11,18 +11,9 @@
           <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
         </li>
         
-        @guest
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('login')}}">{{ __('ui.login') }}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{route('register')}}">{{ __('ui.register') }}</a>
-        </li>  
-        @endguest
-        
         @auth 
         <li class="nav-item">
-          <a href="#" class="nav-link">Welcome {{Auth::user()->name}}</a>
+          <a href="#" class="nav-link">Welcome {{Auth::user()->name}}!</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('article.index')}}">{{ __('ui.browseItems') }}</a>
@@ -36,10 +27,7 @@
             <button class="nav-link" type="submit">Logout</button>
           </form>
         </li>
-        
-        
-        @endauth
-        {{-- @if (Auth::user()->is_revisor) --}}
+        @if (Auth::user()->is_revisor)
         <li class="nav-item">
           <a href="{{route('revisor.index')}}" class="nav-link btn btn-sm position-relative w-sm-25">{{ __('ui.revisorArea') }}
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -47,10 +35,22 @@
             </span>
           </a>
         </li>
+        @endif  
         <li class="nav-item">
           <a href="{{route('become.revisor')}}" class="nav-link">{{ __('ui.becomeRevisor') }}</a>
         </li>
-        {{-- @endif   --}}
+
+        @else
+
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('login')}}">{{ __('ui.login') }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{route('register')}}">{{ __('ui.register') }}</a>
+        </li>  
+
+        @endauth
+
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,7 +67,7 @@
             
           </ul>
         </li>
-
+        
         <form action="{{route('article.search')}}" method="GET" class="d-flex ms-auto" role="search">
           <div class="input-group">
             <input type="search" name="query" class="form-control" placeholder="{{ __('ui.search') }}" aria-label="search">

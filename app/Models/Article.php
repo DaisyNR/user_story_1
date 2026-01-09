@@ -39,7 +39,7 @@ class Article extends Model
     }
 
     public function setAccepted($value){
-        $this->is_accepted=$value;
+        $this->is_accepted = $value;
         $this->save();
         return true;
     }
