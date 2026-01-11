@@ -3,10 +3,10 @@ return
 [
     'hello' => 'Hello',
     'welcome' => 'Welcome',
-    'allArticles' => 'All the articles',
     'browseItems' => 'Browse Items',
     'sellAnItem' => 'Sell an item',
     'search' => 'Search',
+    'password' => 'Your password',
     'emailAddress' => 'Email address',
     'categories' =>  'Categories',
     'login' => 'Login',
@@ -25,5 +25,10 @@ return
     'books_and_magazines' => 'Books & Magazines',
     'accessories' => 'Accessories',
     'motors' => 'Motors',
-    'itemsBelonging'=> 'Items belonging to the category:'
+    'itemsBelonging'=> 'Items belonging to the category:',
+    'selectCategory' => 'Select a category...',
+    'title' => 'Title',
+    'description' => 'Description',
+    'price' => 'Price',
+    'submit' => 'Submit'
 ];

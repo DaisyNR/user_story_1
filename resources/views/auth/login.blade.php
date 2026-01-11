@@ -15,7 +15,7 @@
                     <input type="email" class="form-control" id="email" name="email">
                 </div>
                 <div class="mb-3">
-                    <label for="password" class="form-label">Your password</label>
+                    <label for="password" class="form-label">{{ __('ui.password') }}</label>
                     <input type="password" class="form-control" id="password" name="password">
                 </div>
                 <button type="submit" class="btn btn-blue">{{ __('ui.login') }}</button>

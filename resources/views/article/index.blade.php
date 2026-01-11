@@ -3,7 +3,7 @@
         <div class="container h-100 pt-5">
             <div class="row h-100 justify-content-center align-items-center">
                 <div class="col-12 col-md-8">
-                    <h1 class="text-center display-4 t-green">Browse all items</h1>
+                    <h1 class="text-center display-4 t-green">{{ __('ui.browseItems') }}</h1>
                 </div>
             </div>
         </div>

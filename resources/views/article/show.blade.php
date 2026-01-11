@@ -18,9 +18,11 @@
                 <h4 class="fw-bold">Description</h4>
                 <p>{{ $article->description }}</p>
                 
-                <h5 class="mt-3">
-                    <p>{{ $article->category?->name ?? 'No category' }}</p>
-                </h5>
+                @if ($article->category)
+                <a href="{{ route('byCategory', $article->category) }}"
+                    class="mb-3"> <span class="badge rounded-pill text-bg-secondary fw-light">#{{ __('ui.' . $article->category->name) }}</span> 
+                </a>
+                @endif
             </div>
             
             {{-- IMMAGINI --}}

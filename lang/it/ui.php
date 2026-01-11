@@ -3,10 +3,10 @@ return
 [
     'hello' => 'Ciao',
     'welcome' => 'Benvenut@',
-    'allArticles' => 'Tutti gli articoli',
-    'browseItems' => 'Guarda articoli',
+    'browseItems' => 'Tutti gli articoli',
     'sellAnItem' => 'Vendi un articolo',
     'search' => 'Cerca',
+    'password' => 'La tua password',
     'emailAddress' => 'Indirizzo email',
     'categories' => 'Categorie',
     'login' => 'Accedi',
@@ -25,5 +25,10 @@ return
     'books_and_magazines' => 'Libri e riviste',
     'accessories' => 'Accessori',
     'motors' => 'Motori',
-    'itemsBelonging'=> 'Articoli appartenenti alla categoria:'
+    'itemsBelonging'=> 'Articoli appartenenti alla categoria:',
+    'selectCategory' => 'Seleziona categoria...',
+    'title' => 'Titolo',
+    'description' => 'Descrizione',
+    'price' => 'Prezzo',
+    'submit' => 'Salva'
 ];

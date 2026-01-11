@@ -17,7 +17,7 @@ class CreateArticleForm extends Component
 
     #[Validate('required|min:3')] 
     public $title= '';
- 
+
     #[Validate('required|min:10')] 
     public $description= '';
 

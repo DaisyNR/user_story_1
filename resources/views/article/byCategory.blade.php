@@ -2,10 +2,10 @@
     <div class="container">
         <div class="row justify-content-center align-items-center text-center mt-5">
             <div class="col-12">
-                <h1 class="display-6">{{ __('ui.itemsBelonging') }} <br/> <span class="fst-italic fw-bold text-uppercase">{{__("ui.{$category->name}")}}</span></h1>
+                <h3 class="display-6">{{ __('ui.itemsBelonging') }} <br/> <span class=" h1">{{__("ui.{$category->name}")}}</span></h3>
             </div>
         </div>
-        <div class="row justify-content-center align-items-center py-5">
+        <div class="row justify-content-center align-items-center py-2">
             @forelse ($articles as $article)
                 <div class="col-12 col-md-3">
                     <x-card :article="$article"/>
