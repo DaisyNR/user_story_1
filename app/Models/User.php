@@ -24,6 +24,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'is_revisor',
     ];
     
     /**
@@ -41,13 +42,11 @@ class User extends Authenticatable
     *
     * @return array<string, string>
     */
-    protected function casts(): array
-    {
-        return [
+    protected $casts = [
             'email_verified_at' => 'datetime',
+            'is_revisor' => 'boolean',
             // 'password' => 'hashed',
         ];
-    }
     
     public function articles(): HasMany
     {

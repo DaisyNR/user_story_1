@@ -2,6 +2,7 @@
 return 
 [
     'hello' => 'Hello',
+    'welcome' => 'Welcome',
     'allArticles' => 'All the articles',
     'browseItems' => 'Browse Items',
     'sellAnItem' => 'Sell an item',
@@ -12,6 +13,7 @@ return
     'register' => 'Register',
     'revisorArea' => 'Revisor Area',
     'becomeRevisor' => 'Become a revisor',
+    'review_articles' => 'Review articles',
     'readMore...' => 'Read more...',
     'tech' => 'Tech',
     'clothing' => 'Clothing',

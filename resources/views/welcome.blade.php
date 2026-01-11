@@ -13,7 +13,7 @@
                 @auth
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12 col-md-8 text-center">
-                        <h1 class="titolo display-5 t-pink">BENVENUT@ {{Auth::user()->name}}</h1>
+                        <h1 class="titolo display-5 t-pink text-uppercase">{{ __('ui.welcome') }} {{Auth::user()->name}}</h1>
                         @if(session()->has('message'))
                             <div class="alert text-center alert-success m-auto shadow rounded w-50">{{session('message')}}</div>
                         @endif

@@ -2,6 +2,7 @@
 return 
 [
     'hello' => 'Ciao',
+    'welcome' => 'Benvenut@',
     'allArticles' => 'Tutti gli articoli',
     'browseItems' => 'Guarda articoli',
     'sellAnItem' => 'Vendi un articolo',
@@ -10,6 +11,7 @@ return
     'categories' => 'Categorie',
     'login' => 'Accedi',
     'register' => 'Registrati',
+    'review_articles' => 'Revisiona articoli',
     'revisorArea' => 'Area revisori',
     'becomeRevisor'=>'Diventa revisore',
     'readMore...' => 'Continua a leggere...',
