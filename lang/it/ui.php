@@ -14,7 +14,7 @@ return
     'review_articles' => 'Revisiona articoli',
     'revisorArea' => 'Area revisori',
     'becomeRevisor'=>'Diventa revisore',
-    'readMore...' => 'Continua a leggere...',
+    'readMore...' => 'Scopri di più...',
     'tech' => 'Tecnologia',
     'clothing' => 'Abbigliamento',
     'health_and_beauty' => 'Salute e bellezza',
@@ -25,4 +25,5 @@ return
     'books_and_magazines' => 'Libri e riviste',
     'accessories' => 'Accessori',
     'motors' => 'Motori',
+    'itemsBelonging'=> 'Articoli appartenenti alla categoria:'
 ];

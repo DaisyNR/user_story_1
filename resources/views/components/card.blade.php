@@ -4,13 +4,12 @@
         <h5 class="card-title">{{$article->title}}</h5>
         <h6 class="card-subtitle mb-3">{{$article->price}}€</h6>
         <p class="card-text">{{$article->description}}</p>
-        <a href="{{route('article.show', compact('article'))}}" class="btn btn-green btn-sm mt-auto ">{{ __('ui.readMore...') }}</a>
         @if ($article->category)
         <a href="{{ route('byCategory', $article->category) }}"
-            class="btn btn-green btn-sm mt-auto">
-            {{ $article->category->name }}
+            class="mb-3"> <span class="badge rounded-pill text-bg-secondary fw-light">#{{ __('ui.' . $article->category->name) }}</span> 
         </a>
         @endif
+        <a href="{{route('article.show', $article)}}" class="btn btn-green btn-sm mt-auto ">{{ __('ui.readMore...') }}</a>
         
     </div>
 </div>

@@ -25,4 +25,5 @@ return
     'books_and_magazines' => 'Libros y revistas',
     'accessories' => 'Accesorios',
     'motors' => 'Motores',
+    'itemsBelonging'=> 'Artículos pertenecientes a la categoría:'
 ];

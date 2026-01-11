@@ -25,4 +25,5 @@ return
     'books_and_magazines' => 'Books & Magazines',
     'accessories' => 'Accessories',
     'motors' => 'Motors',
+    'itemsBelonging'=> 'Items belonging to the category:'
 ];

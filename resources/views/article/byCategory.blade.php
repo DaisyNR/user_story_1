@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container">
         <div class="row justify-content-center align-items-center text-center mt-5">
-            <div class="col-12 pt-5">
-                <h1 class="display-6">Items belonging to the category: <br/> <span class="fst-italic fw-bold text-uppercase">{{$category->name}}</span></h1>
+            <div class="col-12">
+                <h1 class="display-6">{{ __('ui.itemsBelonging') }} <br/> <span class="fst-italic fw-bold text-uppercase">{{__("ui.{$category->name}")}}</span></h1>
             </div>
         </div>
         <div class="row justify-content-center align-items-center py-5">
