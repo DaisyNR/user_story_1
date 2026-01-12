@@ -11,13 +11,17 @@ class PublicController extends Controller
         $articles = Article::with('category')->where('is_accepted',true)->orderBy('created_at','desc')->take(6)->get();
         return view('welcome', compact('articles'));
     }
-
+    
     public function searchArticles(Request $request){
         $query = $request->input('query');
-        $articles = Article::search($query)->where('is_accepted',true)->with('category')->paginate(10);
+        $articles = Article::search($query)
+        ->query(fn ($q) => 
+        $q->where('is_accepted', true)->with('category')
+        )
+        ->paginate(10);
         return view('article.searched',['articles'=>$articles, 'query'=>$query]);
     }
-
+    
     public function setLanguage($lang){
         session()->put('locale', $lang);
         return redirect()->back();

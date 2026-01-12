@@ -1,8 +1,8 @@
 <x-layout>
     <div class="container-fluid pt-5">
         <div class="row justify-content-center">
-            <div class="col-12 pb-2"> 
-                <h1 class="display-5 text-center ">{{ __('ui.revisorDashboard') }}</h1>
+            <div class="col-12"> 
+                <h1 class="display-5 text-center py-3">{{ __('ui.revisorDashboard') }}</h1>
             </div>
         </div>
     </div>
@@ -48,12 +48,12 @@
                 <form action="{{route('reject',['article' => $article_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-danger py-2 px-5 fw-bold">Reject</button>
+                    <button class="btn btn-danger py-2 px-5 fw-bold">{{ __('ui.reject') }}</button>
                 </form>
                 <form action="{{route('accept',['article'=>$article_to_check])}}" method="POST">
                     @csrf
                     @method('PATCH')
-                    <button class="btn btn-success py-2 px-5 fw-bold">Accept</button>
+                    <button class="btn btn-success py-2 px-5 fw-bold">{{ __('ui.accept') }}</button>
                 </form>
 
             </div>

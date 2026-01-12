@@ -39,5 +39,11 @@ return
     'confirmPassword' => 'Confirm password',
     'uploadItem' => 'Upload an item',
     'noItemsCategory' => 'No items for this category',
-    'articles' => 'Articles'
+    'articles' => 'Articles',
+    'results' => 'Results for:',
+    'noMatch'=> 'No item matches your search',
+    'noItemsOnSale' => 'No items on sale',
+    'latestArticles' => 'Latest articles',
+    'reject' => 'Reject',
+    'accept' => 'Accept',
 ];

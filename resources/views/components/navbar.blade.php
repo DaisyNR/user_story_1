@@ -35,80 +35,85 @@
         </li>
         
         @auth 
-
+        
         <li class="nav-item">
-            <a href="#" class="nav-link text-capitalize">{{ __('ui.welcome') }} {{Auth::user()->name}}!</a>
+          <a href="#" class="nav-link text-capitalize">{{ __('ui.welcome') }} {{Auth::user()->name}}!</a>
         </li>
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">{{ __('ui.articles') }}</a>
           <ul class="dropdown-menu">
-              
-              <li class="nav-item">
-                <a class="nav-link dropdown-custom" href="{{route('article.index')}}">{{ __('ui.browseItems') }}</a>
-              </li>
-              <li class="nav-item dropdown-custom">
-                <a href="{{route('create.article')}}" class="nav-link">{{ __('ui.sellAnItem') }}</a>
-              </li>
-              
-            </ul>
+            
+            <li class="nav-item">
+              <a class="nav-link dropdown-custom" href="{{route('article.index')}}">{{ __('ui.browseItems') }}</a>
+            </li>
+            <li class="nav-item dropdown-custom">
+              <a href="{{route('create.article')}}" class="nav-link">{{ __('ui.sellAnItem') }}</a>
+            </li>
+            
+          </ul>
         </li>
-          
+        
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ __('ui.revisorArea') }} <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
-                {{\App\Models\Article::toBeRevisedCount()}}
-              </span>
-            </a>
-            <ul class="dropdown-menu">
-              
-              <li class="nav-item">
-                <a href="{{route('become.revisor')}}" class=" text-center nav-link dropdown-custom">{{ __('ui.becomeRevisor') }}</a>
-              </li>
-              @if (Auth::user()->is_revisor)
-              <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="text-center nav-link btn btn-sm position-relative w-sm-25 dropdown-custom">{{ __('ui.review_articles') }}
-                  <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
-                    {{\App\Models\Article::toBeRevisedCount()}}
-                  </span>
-                </a>
-              </li>
-              @endif     
-            </ul>
-          </li>
-          
-          @endauth
-          
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              {{ __('ui.categories') }}
-            </a>
-            <ul class="dropdown-menu">
-              
-              @foreach ($categories as $category)
-              <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}"> {{__("ui.{$category->name}")}}</a></li>
-              @if (!$loop->last)
-              <hr class="dropdown-divider">
-              @endif
-              @endforeach
-              
-            </ul>
-          </li>
-          
-        </ul>
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ __('ui.revisorArea') }} 
+            @if(\App\Models\Article::toBeRevisedCount() > 0)
+            <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+              {{ \App\Models\Article::toBeRevisedCount() }}
+            </span>
+            @endif
+          </a>
+
+          <ul class="dropdown-menu">
+            <li class="nav-item">
+              <a href="{{route('become.revisor')}}" class=" text-center nav-link dropdown-custom">{{ __('ui.becomeRevisor') }}</a>
+            </li>
+            @if (Auth::user()->is_revisor)
+            <li class="nav-item">
+              <a href="{{route('revisor.index')}}" class="text-center nav-link btn btn-sm position-relative w-sm-25 dropdown-custom">{{ __('ui.review_articles') }}
+                @if(\App\Models\Article::toBeRevisedCount() > 0)
+                    <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+                        {{ \App\Models\Article::toBeRevisedCount() }}
+                    </span>
+                @endif
+              </a>
+            </li>
+            @endif     
+          </ul>
+        </li>
         
-        <form action="{{route('article.search')}}" method="GET" class="d-flex ms-auto px-2" role="search">
-          <div class="input-group">
-            <input type="search" name="query" class="form-control" placeholder="{{ __('ui.search') }}" aria-label="search">
-            <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2"><i class="bi bi-search"></i></button>
-          </div>
-        </form>
+        @endauth
         
-        <x-_locale lang="it"/>
-        <x-_locale lang="en"/>
-        <x-_locale lang="es"/>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {{ __('ui.categories') }}
+          </a>
+          <ul class="dropdown-menu">
+            
+            @foreach ($categories as $category)
+            <li><a class="dropdown-item text-capitalize dropdown-custom" href="{{route('byCategory',['category'=>$category])}}"> {{__("ui.{$category->name}")}}</a></li>
+            @if (!$loop->last)
+            <hr class="dropdown-divider">
+            @endif
+            @endforeach
+            
+          </ul>
+        </li>
         
-        
-      </div>
+      </ul>
+      
+      <form action="{{route('article.search')}}" method="GET" class="d-flex ms-auto px-2" role="search">
+        <div class="input-group">
+          <input type="search" name="query" class="form-control" placeholder="{{ __('ui.search') }}" aria-label="search">
+          <button type="submit" class="input-group-text btn btn-outline-success" id="basic-addon2"><i class="bi bi-search"></i></button>
+        </div>
+      </form>
+      
+      <x-_locale lang="it"/>
+      <x-_locale lang="en"/>
+      <x-_locale lang="es"/>
+      
+      
     </div>
-  </nav>
+  </div>
+</nav>

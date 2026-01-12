@@ -39,5 +39,11 @@ return
     'confirmPassword' => 'Conferma la password',
     'uploadItem' => 'Carica un articolo',
     'noItemsCategory' => 'Nessun articolo per questa categoria',
-    'articles' => 'Articoli'
+    'articles' => 'Articoli',
+    'results' => 'Risultati per:',
+    'noMatch'=> 'Nessun articolo corrisponde alla tua ricerca',
+    'noItemsOnSale' => 'Nessun articolo in vendita',
+    'latestArticles' => 'Articoli più recenti',
+    'reject' => 'Rifiuta',
+    'accept' => 'Accetta',
 ];

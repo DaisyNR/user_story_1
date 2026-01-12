@@ -39,5 +39,11 @@ return
     'confirmPassword' => 'Confirma la contraseña',
     'uploadItem' => 'Subir un artículo',
     'noItemsCategory' => 'No hay artículos para esta categoría',
-    'articles' => 'Artículos'
+    'articles' => 'Artículos',
+    'results' => 'Resultados para:',
+    'noMatch'=> 'Ningún artículo coincide con tu búsqueda',
+    'noItemsOnSale' => 'No hay artículos en venta',
+    'latestArticles' => 'Artículos más recientes',
+    'reject' => 'Rechazar',
+    'accept' => 'Aceptar',
 ];

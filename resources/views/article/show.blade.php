@@ -1,19 +1,11 @@
 <x-layout>
     <div class="container">
         
-        <div class="row justify-content-start text-start mt-5">
-            <div class="col-12">
-                <h2 class="display-4 text-uppercase my-4">
-                    {{ $article->title }}
-                </h2>
-            </div>
-        </div>
-        
-        <div class="row align-items-start">
+        <div class="row d-flex justify-content-center align-items-center min-vh-100">
             
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 text-center">
+                <h2 class="display-4 text-uppercase">{{ $article->title }}</h2>
                 <h4 class="fw-bold">{{ $article->price }} €</h4>
-                
                 <h5>{{ $article->description }}</h5>
                 
                 @if ($article->category)
