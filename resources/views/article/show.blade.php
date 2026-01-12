@@ -1,22 +1,20 @@
 <x-layout>
     <div class="container">
         
-        <div class="row justify-content-center text-center mt-5">
+        <div class="row justify-content-start text-start mt-5">
             <div class="col-12">
-                <h1 class="display-4">
+                <h2 class="display-4 text-uppercase my-4">
                     {{ $article->title }}
-                </h1>
+                </h2>
             </div>
         </div>
         
-        <div class="row align-items-start mt-4">
+        <div class="row align-items-start">
             
             <div class="col-12 col-md-6">
-                <h4 class="fw-bold">Price</h4>
-                <p class="fs-4">{{ $article->price }} €</p>
+                <h4 class="fw-bold">{{ $article->price }} €</h4>
                 
-                <h4 class="fw-bold">Description</h4>
-                <p>{{ $article->description }}</p>
+                <h5>{{ $article->description }}</h5>
                 
                 @if ($article->category)
                 <a href="{{ route('byCategory', $article->category) }}"

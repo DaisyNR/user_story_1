@@ -3,9 +3,9 @@ return
 [
     'hello' => 'Hola',
     'welcome' => 'Bienvenid@',
-    'browseItems' => 'Todos los articulos',
-    'sellAnItem' => 'Vende algo',
-    'search' => 'Busca',
+    'browseItems' => 'Todos los artículos',
+    'sellAnItem' => 'Vende un artículo',
+    'search' => 'Busca...',
     'emailAddress' => 'Correo electrónico',
     'password' => 'Tu password',
     'categories' => 'Categorías',
@@ -14,7 +14,7 @@ return
     'revisorArea' => 'Área de revisores',
     'review_articles' => 'Revisar artículos',
     'becomeRevisor'=>'Conviértete en revisor',
-    'readMore...' => 'Lee más...',
+    'readMore...' => 'Leer más...',
     'tech' => 'Tecnología',
     'clothing' => 'Ropa',
     'health_and_beauty' => 'Salud y belleza',
@@ -30,5 +30,14 @@ return
     'title' => 'Título',
     'description' => 'Descripción',
     'price' => 'Precio',
-    'submit' => 'Guardar'
+    'submit' => 'Guardar',
+    'revisorDashboard' => 'Panel del revisor',
+    'noItemsReview' => 'No hay artículos para revisar',
+    'backHomepage' => 'Volver a la página principal',
+    'name' => 'Nombre',
+    'choosePassword' => 'Elige una contraseña',
+    'confirmPassword' => 'Confirma la contraseña',
+    'uploadItem' => 'Subir un artículo',
+    'noItemsCategory' => 'No hay artículos para esta categoría',
+    'articles' => 'Artículos'
 ];

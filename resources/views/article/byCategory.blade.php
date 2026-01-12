@@ -11,14 +11,14 @@
                     <x-card :article="$article"/>
                 </div>
             @empty
-                <div class="col-12 text-center">
+                <div class="col-12 text-center mt-5">
                     <h3>
-                        No items for this category
+                        {{ __('ui.noItemsCategory') }}
                     </h3>
                 </div>
                 
                 <div class="d-flex justify-content-center">
-                    <a href="{{route('create.article')}}" class="btn btn-outline-dark my-5">Upload an item</a>
+                    <a href="{{route('create.article')}}" class="btn btn-outline-dark">{{ __('ui.uploadItem') }}</a>
                 </div>
                 
             @endforelse

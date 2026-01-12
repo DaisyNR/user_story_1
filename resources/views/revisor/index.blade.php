@@ -2,7 +2,7 @@
     <div class="container-fluid pt-5">
         <div class="row justify-content-center">
             <div class="col-12 pb-2"> 
-                <h1 class="display-5 text-center ">Revisor dashboard</h1>
+                <h1 class="display-5 text-center ">{{ __('ui.revisorDashboard') }}</h1>
             </div>
         </div>
     </div>
@@ -64,8 +64,8 @@
     
     <div class="row justify-content-center align-items-center text-center">
         <div class="col-12">
-            <h2 class="fst-italic display-4">No items to review</h1>
-            <a href="{{route('homepage')}}" class="mt-3 btn btn-outline-dark">Back to homepage</a>
+            <h2 class="fst-italic display-5">{{ __('ui.noItemsReview') }}</h1>
+            <a href="{{route('homepage')}}" class="mt-3 btn btn-outline-dark">{{ __('ui.backHomepage') }}</a>
         </div>
     </div>
         

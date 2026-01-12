@@ -11,7 +11,7 @@
                 <form method="POST" action="{{route('register')}}" class="border-orange b-light-orange shadow rounded p-5 my-3">
                     @csrf
                     <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
+                        <label for="name" class="form-label">{{ __('ui.name') }}</label>
                         <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="mb-3">
@@ -19,11 +19,11 @@
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                     <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
+                        <label for="password" class="form-label">{{ __('ui.choosePassword') }}</label>
                         <input type="password" class="form-control" id="password" name="password">
                     </div>
                     <div class="mb-3">
-                        <label for="password_confirmation" class="form-label">Confirm password</label>
+                        <label for="password_confirmation" class="form-label">{{ __('ui.confirmPassword') }}</label>
                         <input type="password" class="form-control" id="password_confirmation" name="password_confirmation">
                     </div>
                     <button type="submit" class="btn btn-orange">{{ __('ui.register') }}</button>

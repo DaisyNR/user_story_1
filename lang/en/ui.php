@@ -5,7 +5,7 @@ return
     'welcome' => 'Welcome',
     'browseItems' => 'Browse Items',
     'sellAnItem' => 'Sell an item',
-    'search' => 'Search',
+    'search' => 'Search...',
     'password' => 'Your password',
     'emailAddress' => 'Email address',
     'categories' =>  'Categories',
@@ -30,5 +30,14 @@ return
     'title' => 'Title',
     'description' => 'Description',
     'price' => 'Price',
-    'submit' => 'Submit'
+    'submit' => 'Submit',
+    'revisorDashboard' => 'Revisor dashboard',
+    'noItemsReview' => 'No items to review',
+    'backHomepage' => 'Back to homepage',
+    'name' => 'Name',
+    'choosePassword' => 'Choose a password',
+    'confirmPassword' => 'Confirm password',
+    'uploadItem' => 'Upload an item',
+    'noItemsCategory' => 'No items for this category',
+    'articles' => 'Articles'
 ];

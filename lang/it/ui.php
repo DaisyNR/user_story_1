@@ -5,7 +5,7 @@ return
     'welcome' => 'Benvenut@',
     'browseItems' => 'Tutti gli articoli',
     'sellAnItem' => 'Vendi un articolo',
-    'search' => 'Cerca',
+    'search' => 'Cerca...',
     'password' => 'La tua password',
     'emailAddress' => 'Indirizzo email',
     'categories' => 'Categorie',
@@ -30,5 +30,14 @@ return
     'title' => 'Titolo',
     'description' => 'Descrizione',
     'price' => 'Prezzo',
-    'submit' => 'Salva'
+    'submit' => 'Salva',
+    'revisorDashboard' => 'Dashboard revisore',
+    'noItemsReview' => 'Nessun articolo da revisionare',
+    'backHomepage' => 'Torna alla homepage',
+    'name' => 'Nome',
+    'choosePassword' => 'Scegli una password',
+    'confirmPassword' => 'Conferma la password',
+    'uploadItem' => 'Carica un articolo',
+    'noItemsCategory' => 'Nessun articolo per questa categoria',
+    'articles' => 'Articoli'
 ];
