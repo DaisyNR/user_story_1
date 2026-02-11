@@ -21,12 +21,12 @@
                             <div class="card-body">
                                 <h5>Labels</h5>
                                 @if ($image->labels)
-                            @foreach ($image->labels as $label)
-                                #{{$label}},
-                            @endforeach
-                        @else
-                            <p class="fst-italic">No labels</p>
-                        @endif
+                                    @foreach ($image->labels as $label)
+                                        #{{$label}},
+                                    @endforeach
+                                @else
+                                    <p class="fst-italic">No labels</p>
+                                @endif
                             </div>
                         </div>
                         
