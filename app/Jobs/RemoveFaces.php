@@ -4,7 +4,7 @@ namespace App\Jobs;
 
 use Spatie\Image\Enums\Fit;
 use App\Models\Image;
-use App\Models\Image as SpatieImage;
+use Spatie\Image\Image as SpatieImage;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Queue\Queueable;
@@ -42,7 +42,7 @@ class RemoveFaces implements ShouldQueue
 
         $imageAnnotator = new ImageAnnotatorClient();
         $response = $imageAnnotator->faceDetection($image);
-        $faces->$response->getFaceAnnotations();
+        $faces = $response->getFaceAnnotations();
 
         foreach ($faces as $face) {
             $vertices = $face->getBoundingPoly()->getVertices();
