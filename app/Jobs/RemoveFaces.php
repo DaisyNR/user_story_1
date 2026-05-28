@@ -10,8 +10,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Google\Cloud\Vision\V1\Client\ImageAnnotatorClient;
 use Spatie\Image\Enums\AlignPosition;
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class RemoveFaces implements ShouldQueue
 {

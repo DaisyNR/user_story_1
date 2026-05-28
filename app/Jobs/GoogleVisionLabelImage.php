@@ -8,7 +8,7 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Foundation\Queue\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
-use Google\Cloud\Vision\V1\Client\ImageAnnotatorClient;
+use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 
 class GoogleVisionLabelImage implements ShouldQueue
 {
@@ -35,7 +35,7 @@ class GoogleVisionLabelImage implements ShouldQueue
 
         $imageAnnotator = new ImageAnnotatorClient();
         $response = $imageAnnotator->labelDetection($image);
-        $labels->$response->getLabelAnnotations();
+        $labels = $response->getLabelAnnotations();
 
         if($labels){
             $result = [];
